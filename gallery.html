@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gallery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 class="text-center text-white mb-4">Photo Gallery</h2>
+    <div class="btn-group btn-group-toggle d-flex justify-content-center mb-4" data-toggle="buttons">
+      <label class="btn btn-outline-light active">
+        <input type="radio" name="categories" value="all" autocomplete="off" checked> All
+      </label>
+      <label class="btn btn-outline-light">
+        <input type="radio" name="categories" value="myself" autocomplete="off"> Myself
+      </label>
+      <label class="btn btn-outline-light">
+        <input type="radio" name="categories" value="friends" autocomplete="off"> Friends
+      </label>
+      <label class="btn btn-outline-light">
+        <input type="radio" name="categories" value="family" autocomplete="off"> Family
+      </label>
+      <label class="btn btn-outline-light">
+        <input type="radio" name="categories" value="hobbies" autocomplete="off"> Hobbies
+      </label>
+      <label class="btn btn-outline-light">
+        <input type="radio" name="categories" value="anime" autocomplete="off"> Anime
+      </label>
+    </div>
+
+    <div class="row">
+      <!-- Myself Images -->
+      <div class="col-md-3 mb-4" data-category="myself">
+        <div class="card border-0 shadow">
+          <img src="myself/1.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Myself Image 1" alt="Myself Image 1">
+          <div class="card-body text-center">
+            <p class="card-text">Myself Image 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="myself">
+        <div class="card border-0 shadow">
+          <img src="myself/2.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Myself Image 2" alt="Myself Image 2">
+          <div class="card-body text-center">
+            <p class="card-text">Myself Image 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="myself">
+        <div class="card border-0 shadow">
+          <img src="myself/3.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Myself Image 3" alt="Myself Image 3">
+          <div class="card-body text-center">
+            <p class="card-text">Myself Image 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="myself">
+        <div class="card border-0 shadow">
+          <img src="myself/4.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Myself Image 4" alt="Myself Image 4">
+          <div class="card-body text-center">
+            <p class="card-text">Myself Image 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="myself">
+        <div class="card border-0 shadow">
+          <img src="myself/5.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Myself Image 5" alt="Myself Image 5">
+          <div class="card-body text-center">
+            <p class="card-text">Myself Image 5</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Friends Images -->
+      <div class="col-md-3 mb-4" data-category="friends">
+        <div class="card border-0 shadow">
+          <img src="friends/1.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Friends Image 1" alt="Friends Image 1">
+          <div class="card-body text-center">
+            <p class="card-text">Friends Image 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="friends">
+        <div class="card border-0 shadow">
+          <img src="friends/2.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Friends Image 2" alt="Friends Image 2">
+          <div class="card-body text-center">
+            <p class="card-text">Friends Image 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="friends">
+        <div class="card border-0 shadow">
+          <img src="friends/3.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Friends Image 3" alt="Friends Image 3">
+          <div class="card-body text-center">
+            <p class="card-text">Friends Image 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="friends">
+        <div class="card border-0 shadow">
+          <img src="friends/4.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Friends Image 4" alt="Friends Image 4">
+          <div class="card-body text-center">
+            <p class="card-text">Friends Image 4</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Family Images -->
+      <div class="col-md-3 mb-4" data-category="family">
+        <div class="card border-0 shadow">
+          <img src="family/1.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Family Image 1" alt="Family Image 1">
+          <div class="card-body text-center">
+            <p class="card-text">Family Image 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="family">
+        <div class="card border-0 shadow">
+          <img src="family/2.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Family Image 2" alt="Family Image 2">
+          <div class="card-body text-center">
+            <p class="card-text">Family Image 2</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Hobbies Images -->
+      <div class="col-md-3 mb-4" data-category="hobbies">
+        <div class="card border-0 shadow">
+          <img src="hobies/1.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Hobbies Image 1" alt="Hobbies Image 1">
+          <div class="card-body text-center">
+            <p class="card-text">Hobbies Image 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="hobbies">
+        <div class="card border-0 shadow">
+          <img src="hobies/2.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Hobbies Image 2" alt="Hobbies Image 2">
+          <div class="card-body text-center">
+            <p class="card-text">Hobbies Image 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4" data-category="hobbies">
+        <div class="card border-0 shadow">
+          <img src="hobies/3.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Hobbies Image 3" alt="Hobbies Image 3">
+          <div class="card-body text-center">
+            <p class="card-text">Hobbies Image 3</p>
+          </div>
+        </div>
+      </div>
+    
+        <!-- Anime Images -->
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/1.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 1" alt="Anime Image 1">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/2.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 2" alt="Anime Image 2">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/3.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 3" alt="Anime Image 3">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/4.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 4" alt="Anime Image 4">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/5.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 5" alt="Anime Image 5">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/6.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 6" alt="Anime Image 6">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 6</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/7.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 7" alt="Anime Image 7">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 7</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/8.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 8" alt="Anime Image 8">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 8</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/9.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 9" alt="Anime Image 9">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 9</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4" data-category="anime">
+          <div class="card border-0 shadow">
+            <img src="anime/10.jpg" class="card-img-top img-fluid img-thumbnail" data-toggle="modal" data-target="#imageModal" data-title="Anime Image 10" alt="Anime Image 10">
+            <div class="card-body text-center">
+              <p class="card-text">Anime Image 10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img src="" id="modalImage" class="img-fluid w-100" alt="Modal Image">
+          <div class="modal-title p-3 text-center" id="modalImageTitle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container py-3 text-center">
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="mt-2 mb-0 text-muted">© 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('input[name="categories"]').on('change', function() {
+        var category = $(this).val();
+        if (category === 'all') {
+          $('[data-category]').show();
+        } else {
+          $('[data-category]').hide();
+          $('[data-category="' + category + '"]').show();
+        }
+      });
+
+      $('#imageModal').on('show.bs.modal', function(event) {
+        var button = $(event.relatedTarget);
+        var src = button.attr('src');
+        var title = button.data('title');
+        var modal = $(this);
+        modal.find('#modalImage').attr('src', src);
+        modal.find('#modalImageTitle').text(title);
+      });
+    });
+  </script>
+</body>
+</html>
